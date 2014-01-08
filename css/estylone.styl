@@ -195,11 +195,112 @@ nav
 		margin-bottom 0.5em
 		text-shadow 1px 2px 0 rgba(0,0,0,.4)
 
-		.detalles
-			padding 224px
-			text-align center
-			font-size 2.2em
-			color #CE3C6B
+		.contenedorFormulario
+				display inline-block
+	 			padding 20px 50px
+	 			box-shadow 3px 0px 8px rgba(0, 0, 0, 0.4)
+	 			border-radius 0 1px 1px 0
+
+ 			#formulario
+ 			 	.campoTexto 
+					 display block
+					 border 1px solid #e5e5e5
+					 border-radius 1px
+					 color #aaa
+					 font-size 1em
+					 margin 0 0 10px 0
+					 padding 1px 4px
+					 height 32px
+					 outline none
+					 width 330px
+					 transition 0.4s width ease-in
+					 -webkit-transition 0.4s width ease-in-out
+					 -moz-transition 0.4s width ease-in-out
+					 -o-transition 0.4s width ease-in-out
+				
+				 
+				.campoTexto:focus 
+					 width 400px
+					 background #f9f9f9
+					 box-shadow 0px 0px 12px rgb(255, 255, 255)
+				
+				 
+				textarea 
+					 background rgba(244, 244, 244, 0.8)
+					 border 1px solid #ddd
+					 border-radius 1px
+					 display block
+					 padding 5px 5px
+					 max-width 100%
+					 max-height 150px
+					 width 100%
+					 height 150px
+					 font-size inherit
+					 font-family arial
+					 outline inherit
+				
+				 
+				#formulario 
+					 opacity 0.7
+					 width 200px
+					 height 50px
+					 border none
+					 margin 10px 0
+					 font-size 18px 
+					 border-radius 2px
+					 cursor pointer
+					 transition 0.2s all ease-in 
+					 -webkit-transition 0.2s all ease-in-out 
+					 -moz-transition 0.2s all ease-in-out
+					 -o-transition 0.2s all ease-in-out
+				
+				.enviar
+					display block
+					 background rgba(243,243,243, 0.9)
+					 background: #40b2e4
+					 border 1px solid #e5e5e5
+					 border-radius 1px
+					 color #fff
+					 font-size 1em
+					 margin 0 0 10px 0
+					 margin-top: 4px;
+					 padding 2px 4px
+					 height 32px
+					 outline none
+					 width 230px
+					 transition 0.4s width ease-in
+					 -webkit-transition 0.4s width ease-in-out
+					 -moz-transition 0.4s width ease-in-out
+					 -o-transition 0.4s width ease-in-out
+					
+					  
+				
+				 
+				input:hover 
+				 	background color_header
+				
+
+				input:active 
+					 box-shadow inset 0px 2px 4px #2c7c9f
+					 transition 0.04s all ease-in-out 
+					 -webkit-transition 0.04s all ease-in-out
+					 -moz-transition 0.04s all ease-in-out
+					 -o-transition 0.04s all ease-in-out
+			
+			#titulo
+			 display: block;
+			 height: 45px;
+			 position: absolute;
+			 top:-16px;
+			 left:390px;
+			 background: rgba(255, 255, 255, 0.7);
+			 text-align:center;
+			 font-family: 'Aguafina Script', cursive;
+			 font-weight: 900;
+			 letter-spacing:5px;
+			 color:#333;
+			 text-shadow:0px 0px 2px #777;
+			 padding:0px 10px
 		
 
 .left
@@ -211,6 +312,7 @@ nav
 
 @media screen and (max-width: 768px)
 
+	
 	header
 		.buscador
 			display inline-block
@@ -226,7 +328,7 @@ nav
 		.post
 			display inline-block
 			verticar-align top
-			.detalles
-				padding 10px
-	
-
+			.contenedorFormulario
+				width 97%
+				padding 2px 5px
+				margin 10px 0

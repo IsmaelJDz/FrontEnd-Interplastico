@@ -26,14 +26,22 @@ nav a{color:#fff;display:block;margin:0 .5em;padding:0 .2em;text-decoration:none
 nav a:after{content:" -"}
 nav a:before{content:"- "}
 nav a:hover{background:rgba(0,0,0,0.1)}
-.posts{padding:.5em;background-image:url("../imagenes/fondo2.jpg");background-repeat:no-repeat;background-size:100%;background-position:center;overflow:auto;}
+.posts{padding:.5em;background-image:url("../imagenes/fondo2.jpg");background-repeat:no-repeat;background-size:100%;background-position:center;overflow:auto;padding:20px 50px;box-shadow:3px 0 8px rgba(0,0,0,0.4);border-radius:0 1px 1px 0}
 .posts .post{background:transparent;color:color_texto;margin-bottom:.5em;text-shadow:1px 2px 0 rgba(0,0,0,0.4);}
-.posts .post .detalles{padding:224px;text-align:center;font-size:2.2em;color:#ce3c6b}
+.posts .post .contenedorFormulario{display:inline-block}
+#formulario,.campoTexto{display:block;border:1px solid #e5e5e5;border-radius:1px;color:#aaa;font-size:1em;margin:0 0 10px 0;padding:1px 4px;height:32px;outline:none;width:330px;transition:.4s width ease-in;-webkit-transition:.4s width ease-in-out;-moz-transition:.4s width ease-in-out;-o-transition:.4s width ease-in-out}
+.campoTexto:focus{width:400px;background:#f9f9f9;box-shadow:0 0 12px #fff}
+textarea{background:rgba(244,244,244,0.8);border:1px solid #ddd;border-radius:1px;display:block;padding:5px 5px;max-width:100%;max-height:150px;width:100%;height:150px;font-size:inherit;font-family:arial;outline:inherit}
+#formulario{opacity:.7;width:200px;height:50px;border:none;margin:10px 0;font-size:18px;border-radius:2px;cursor:pointer;transition:.2s all ease-in;-webkit-transition:.2s all ease-in-out;-moz-transition:.2s all ease-in-out;-o-transition:.2s all ease-in-out}
+.enviar{display:block;background:rgba(243,243,243,0.9);background:#40b2e4;border:1px solid #e5e5e5;border-radius:1px;color:#fff;font-size:1em;margin:0 0 10px 0;margin-top:4px;padding:2px 4px;height:32px;outline:none;width:230px;transition:.4s width ease-in;-webkit-transition:.4s width ease-in-out;-moz-transition:.4s width ease-in-out;-o-transition:.4s width ease-in-out}
+input:hover{background:#800038;}
+input:hover input:active{box-shadow:inset 0 2px 4px #2c7c9f;transition:.04s all ease-in-out;-webkit-transition:.04s all ease-in-out;-moz-transition:.04s all ease-in-out;-o-transition:.04s all ease-in-out}
+#titulo{display:block;height:45px;position:absolute;top:-16px;left:390px;background:rgba(255,255,255,0.7);text-align:center;font-family:'Aguafina Script',cursive;font-weight:900;letter-spacing:5px;color:#333;text-shadow:0 0 2px #777;padding:0 10px}
 .left{float:left}
 .right{float:right}
 @media screen and (max-width: 768px){header .buscador{display:inline-block;margin-left:10px}
 header .logo img{width:120px}
 .posts{background-repeat:repeat;}
 .posts .post{display:inline-block;verticar-align:top;}
-.posts .post .detalles{padding:10px}
+.posts .post .contenedorFormulario{width:97%;padding:2px 5px;margin:10px 0}
 }
