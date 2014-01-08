@@ -43,5 +43,9 @@ input:hover input:active{box-shadow:inset 0 2px 4px #2c7c9f;transition:.04s all 
 header .logo img{width:120px}
 .posts{background-repeat:repeat;}
 .posts .post{display:inline-block;verticar-align:top;}
-.posts .post .contenedorFormulario{width:97%;padding:2px 5px;margin:10px 0}
+.posts .post .contenedorFormulario{padding:2px 2px;margin-left:5px;}
+.posts .post .contenedorFormulario .campoTexto{width:90%}
+.posts .post .contenedorFormulario .campoTexto:focus{width:90%}
+.posts .post .contenedorFormulario textarea{width:100%;height:100px;margin-bottom:0}
+.posts .post .contenedorFormulario input[type="submit"]{height:40px}
 }
